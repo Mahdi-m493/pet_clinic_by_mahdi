@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'echo "hello world"'
+        git(url: 'https://github.com/Mahdi-m493/pet_clinic_by_mahdi', branch: 'main')
       }
     }
 
