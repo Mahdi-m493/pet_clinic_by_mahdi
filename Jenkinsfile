@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'jenkins/agent:alpine-jdk11'
+    }
+
+  }
   stages {
     stage('error') {
       steps {
